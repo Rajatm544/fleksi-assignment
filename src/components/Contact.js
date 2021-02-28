@@ -1,6 +1,5 @@
 import React from "react";
 import lettuce from "../images/lettuce.png";
-import dots from "../images/dots.png";
 
 import "../stylesheets/contact.css";
 
@@ -9,9 +8,6 @@ const Contact = () => {
         <section className="contact">
             <img src={lettuce} className="lettuce-img" alt="decorative" />
             <div className="header">
-                <div className="dots-bg">
-                    <img className="dots" src={dots} alt="dots" />
-                </div>
                 <h2 className="contact-heading">Reach Out To Us!</h2>
                 <p className="subtitle">
                     In case you want to share your experience about our service,

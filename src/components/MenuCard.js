@@ -1,5 +1,4 @@
 import React from "react";
-import foodImg from "../images/card3.webp";
 import "../stylesheets/menu-card.css";
 
 const MenuCard = (props) => {
