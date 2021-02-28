@@ -1,0 +1,175 @@
+section.contact {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background: #FFF5EC;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact .dots-bg {
+    position: absolute;
+    right: -10%;
+    margin-left: 2%;
+}
+
+.contact .dots-bg img.dots {
+    width: 15em;
+}
+
+.contact img.lettuce-img {
+    position: absolute;
+    margin-top:-10vh;
+    left: -10%;
+    z-index: 10;
+    transform: rotate(40deg);
+    width: 25em;
+}
+
+.contact .header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header h2.contact-heading {
+    font-size: 2.7em;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #2E266F;
+}
+
+.header p.subtitle {
+    margin-top: -1em;
+    max-width: 40%;
+    text-align: center;
+    font-size: 1em;
+    color: #707070;
+}
+
+.contact .contact-form {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width:40%;
+    align-self: center;
+    margin-top: 1em;
+    margin-left: 5em;
+}
+
+.contact-form label.contact-label {
+    font-weight: 600;
+    color: #202020;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-top: 1.5em;
+}
+
+.contact-form input.contact-input {
+    border: 1px solid #2E266F;
+    outline: none;
+    width:100%;
+    height: 2em;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 0.9em;
+}
+
+.contact-form input.contact-input:focus {
+    border: 1px solid #35CD8C;
+}
+
+.contact-form textarea.contact-message {
+    min-width: 40vw;
+    max-width: 60vw;
+    min-height: 20ch;
+    max-height: 30ch;
+    outline: none;
+    border: 1px solid #2E266F;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 0.9em;
+    font-family: "Poppins",
+    sans-serif;
+    line-height: 1.6em;
+}
+
+.contact-form textarea.contact-message:focus {
+    border: 1px solid #35CD8C;
+}
+
+.contact-form button.contact-submit {
+    background: #35CD8C;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: none;
+    width: 30%;
+    align-self: center;
+    height: 2em;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in;
+    margin-bottom: 2em;
+    margin-top: 1em;
+
+  }
+
+  .contact-form button.contact-submit:hover {
+      box-shadow: 0px 0px 10px #2E266F;
+  }
+
+@media only screen and (max-width: 600px) {
+ 
+    .contact .dots-bg {
+        position: absolute;
+        left: -10%;
+        margin-left: 2%;
+        margin-top: 10%;
+    }
+
+    .contact .dots-bg img.dots {
+        width: 5em;
+        display: none;
+    }
+
+    .contact img.lettuce-img {
+        display: none;
+    }
+
+    .header h2.contact-heading {
+        font-size: 1.8em;
+    }
+
+    .header p.subtitle {
+        max-width: 80%;
+    }
+
+    .contact .contact-form {
+        justify-content: space-around;
+        width: 80%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .contact-form textarea.contact-message {
+        min-width: 80vw;
+        max-width: 90vw;
+        min-height: 15ch;
+        max-height: 30ch;
+    }
+
+    .contact-form button.contact-submit {
+        width: 80%;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        align-self: center;
+        padding: 0.4em;
+    }
+
+    .contact-form button.contact-submit:hover {
+        box-shadow: 0px 0px 10px #2E266F;
+    }
+}
