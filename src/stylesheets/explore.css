@@ -97,5 +97,8 @@ section.menu-card:last-child {
         margin-bottom: 2em;
         align-items: center;
     }
+    .explore .dishes .col:nth-child(2) {
+        margin-top: 1em;
+    }
 }
   
