@@ -1,0 +1,110 @@
+section.menu-card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    height: 50vh;
+    margin:0;
+    margin-top: 3em;
+    border-radius: 1em;
+}
+
+.menu-card img.menu-img {
+    width:30vw;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 1em 1em 0 0;
+}
+
+.menu-card .info {
+    background: #ffffff;
+    position: relative;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 0.5em;
+    border-radius: 0 0 1em 1em;
+}
+
+.info .basic-info {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basic-info p.dish-name {
+    color: #2E266F;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.basic-info p.dish-price {
+    color: #35CD8C;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.info .dish-info {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    color: #707070;
+}
+
+@media screen and (max-width: 600px) {
+    section.menu-card {
+        width: 90vw;
+        height: 40vh;
+        margin: 6em 0;
+        border-radius: 1em;
+    }
+
+    section.menu-card:first-child {
+        margin-top: 2em;
+    }
+
+    .menu-card img.menu-img {
+        width: 90vw;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 1em 1em 0 0;
+    }
+
+    .menu-card .info {
+        background: #ffffff;
+        position: relative;
+        display: inline-flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        padding: 0.5em;
+        border-radius: 0 0 1em 1em;
+    }
+
+    .info .basic-info {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .basic-info p.dish-name {
+        color: #2E266F;
+        font-weight: 600;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .basic-info p.dish-price {
+        color: #35CD8C;
+        font-weight: 700;
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+
+    .info .dish-info {
+        font-size: 0.9em;
+        line-height: 1.6em;
+        color: #707070;
+    }
+}
