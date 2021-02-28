@@ -1,0 +1,178 @@
+section.prebook {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background: #FFF5EC;
+    min-height: 100vh;
+    font-family: "Poppins",
+    sans-serif;
+}
+
+.prebook img.lettuce-img {
+    position: absolute;
+    left: -20%;
+    z-index: 10;
+}
+
+.prebook .dots-bg {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+}
+
+.prebook .dots-bg img.dots {
+    width: 15em;
+}
+
+.prebook div.main-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items:center;
+    background: white;
+    width: 75%;
+    height: 50vh;
+    margin-left: 5em;
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:10%;
+}
+
+.header .green-bar {
+    height: 1.5em;
+    width: 18em;
+    background: #35CD8C;
+}
+
+.header h2.heading {
+    color: #2E266F;
+    text-transform: lowercase;
+    margin-top: 0.5em;
+    font-size: 1.8em;
+    line-height: 1em;
+    
+}
+
+.main-section form.prebook-form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 80%;
+    margin-left:10%;
+}
+
+.prebook-form .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0 0.5em;
+}
+
+.prebook-form label {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #2E266F;
+    font-weight: 500;
+    margin: 0 0.2em;
+}
+
+.prebook-form input[type="text"],
+.prebook-form input[type="email"]{
+    height:2em;
+    min-width: 10vw;
+    border: 1px solid #202020;
+    border-radius: 0.2em;
+}
+.prebook-form input:focus {
+    border: 1px solid #35CD8C;
+    outline: none;
+}
+
+.prebook-form button.booking-submit {
+    background: #35CD8C;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: none;
+    width: 30%;
+    align-self: center;
+    height: 2em;
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.prebook-form button.booking-submit:hover {
+    box-shadow: 0px 0px 10px #2E266F;
+}
+
+@media only screen and (max-width: 600px) {
+    .prebook img.lettuce-img {
+       display: none;
+    }
+
+    .prebook .dots-bg {
+        position: absolute;
+        top: -5%;
+        left: -15%;
+    }
+
+    .prebook .dots-bg img.dots {
+        width: 15em;
+    }
+
+    .prebook div.main-section {
+        width: 90vw;
+        height: 80vh;
+        margin: 0;
+        align-self: center;
+        z-index: 5;
+    }
+
+    .header {
+        margin-top:2em;
+        margin-left: 0;
+    }
+
+    .header .green-bar {
+        height: 1em;
+        width: 15em;
+    }
+
+    .header h2.heading {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+        line-height: 1em;
+
+    }
+
+    .main-section form.prebook-form {
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: 85%;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .prebook-form .row {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .prebook-form .row input[type="text"],
+    .prebook-form .row input[type="email"] {
+        margin: 1em 0;
+    }
+
+}
