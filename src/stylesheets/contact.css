@@ -7,16 +7,6 @@ section.contact {
     font-family: "Poppins", sans-serif;
 }
 
-.contact .dots-bg {
-    position: absolute;
-    right: -10%;
-    margin-left: 2%;
-}
-
-.contact .dots-bg img.dots {
-    width: 15em;
-}
-
 .contact img.lettuce-img {
     position: absolute;
     margin-top:-10vh;
@@ -123,18 +113,6 @@ section.contact {
 
 @media only screen and (max-width: 600px) {
  
-    .contact .dots-bg {
-        position: absolute;
-        left: -10%;
-        margin-left: 2%;
-        margin-top: 10%;
-    }
-
-    .contact .dots-bg img.dots {
-        width: 5em;
-        display: none;
-    }
-
     .contact img.lettuce-img {
         display: none;
     }
