@@ -6,7 +6,6 @@ section.explore {
     align-items: center;
     background: #FFF5EC;
     font-family: "Poppins", sans-serif;
-    overflow-y: hidden !important;
 }
 
 .explore .dots-bg {
@@ -57,6 +56,9 @@ section.explore {
     margin-top: -2em;
 }
 
+section.menu-card:last-child {
+    margin-bottom: 3em;
+}
 @media only screen and (max-width: 600px) {
     .explore .dots-bg {
         top: 20%;
@@ -92,6 +94,8 @@ section.explore {
         width: 95%;
         z-index: 10;
         margin-top: -2em;
+        margin-bottom: 2em;
         align-items: center;
     }
 }
+  
