@@ -1,0 +1,143 @@
+section.about {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background: #FFF5EC;
+}
+
+.about header.about-header {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-header .left-side {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 60%;
+}
+
+.about-header .left-side div.green-block {
+    width: 1.2em;
+    height: 6em;
+    background: #35CD8C;
+    margin-left: 1em;
+}
+
+.about-header .left-side  h1.about-heading {
+    font-size: 2.7em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.2em;
+    color: #2E266F;
+    margin-left: 1em;
+}
+
+.about-header p.about-text {
+    max-width: 30%;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 400;
+    align-self: center;
+    letter-spacing: 0.02em;
+    margin-right: 2em;
+    color: #707070;
+    padding-top: 2em;
+}
+
+.about-carousel .dots-bg {
+    position: absolute;
+    margin-left:2%;
+}
+
+.about-carousel .dots-bg img.dots {
+    width:10em;
+}
+
+.about-carousel .carousel {
+    position: relative;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width:80vw;
+    margin-left:10vw;
+}
+
+.about-carousel .horizontalSlider___281Ls.carousel__slider.carousel__slider--horizontal {
+    height: 30vw;
+
+}
+
+button.carousel__next-button {
+    background: transparent;
+    border: none;
+    font-size: 2.7em;
+    color: #35CD8C;
+    outline: none;
+    align-self: flex-end;
+    margin-top: 1em;
+}
+
+@media only screen and (max-width:600px) {
+    .about header.about-header {
+        display: inline-flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+    }
+
+    .about-header .left-side {
+        max-width: 100%;
+    }
+
+    .about-header .left-side div.green-block {
+        width: 1.5em;
+        height: 7em;
+    }
+
+    .about-header .left-side h1.about-heading {
+        font-size: 1.8em;
+        line-height: 1.2em;
+        margin: 1em 0.2em;
+        max-width: 30ch;
+    }
+
+    .about-header p.about-text {
+        max-width: 94%;
+        padding-top: 0;
+        margin: 0;
+        margin-left: 1em;
+    }
+
+    .about-carousel .dots-bg {
+        margin-left: -5%;
+        margin-top: 1.2em;
+    }
+
+    .about-carousel .dots-bg img.dots {
+        width: 15em;
+        z-index: 10;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    .about-carousel .carousel {
+        width: 90vw;
+        margin: 10vw 5vw 0 5vw;
+    }
+
+    .about-carousel .horizontalSlider___281Ls.carousel__slider.carousel__slider--horizontal {
+        height: 95vh;
+    }
+
+    button.carousel__next-button {
+        background: transparent;
+        border: none;
+        font-size: 2.7em;
+        color: #35CD8C;
+        outline: none;
+        align-self: flex-end;
+        margin-top: 1em;
+    }
+}
