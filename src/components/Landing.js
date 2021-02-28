@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../stylesheets/landing.css";
 import landingImg from "../images/food-top.png";
 import dots from "../images/dots.png";
@@ -6,7 +6,6 @@ import dots from "../images/dots.png";
 const Landing = () => {
     const [state, setState] = useState({
         logo: "expice",
-
         name: "Restaurant Nidda",
     });
 
