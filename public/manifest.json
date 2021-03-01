@@ -16,8 +16,8 @@
     ],
     "orientation": "portrait",
     "description": "Example app built by Rajat",
-    "theme_color":"#FFF5EC",
-    "background_color":"#35CD8C",
+    "theme_color":"#35CD8C",
+    "background_color":"#2E266F",
     "display":"standalone",
     "start_url": "/"
 }
