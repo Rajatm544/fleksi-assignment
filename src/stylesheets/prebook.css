@@ -4,14 +4,14 @@ section.prebook {
     flex-flow: column nowrap;
     justify-content: center;
     background: #FFF5EC;
-    min-height: 100vh;
+    min-height: 80vh;
     font-family: "Poppins",
     sans-serif;
 }
 
 .prebook img.lettuce-img {
     position: absolute;
-    left: -20%;
+    left: -25%;
     z-index: 10;
 }
 
@@ -28,13 +28,15 @@ section.prebook {
 .prebook div.main-section {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items:center;
-    background: white;
+    background: transparent;
     width: 75%;
-    height: 50vh;
-    margin-left: 5em;
+    height: 80vh;
+    margin-left: 8em;
     z-index: 5;
+    margin-top: 10vh;
+
 }
 
 .header {
@@ -46,14 +48,13 @@ section.prebook {
 }
 
 .header .green-bar {
-    height: 1.5em;
+    height: 1.2em;
     width: 18em;
     background: #35CD8C;
 }
 
 .header h2.heading {
     color: #2E266F;
-    text-transform: lowercase;
     margin-top: 0.5em;
     font-size: 1.8em;
     line-height: 1em;
@@ -64,16 +65,26 @@ section.prebook {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    height: 60%;
+    height: 50vh;
     width: 80%;
     margin-left:10%;
 }
 
-.prebook-form .row {
+.prebook-form .form-content {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: -10vh;
+}
+
+.prebook-form .col {
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-around;
-    margin: 0 0.5em;
+    align-items: flex-start;
+    margin: 1em 0;
+    min-width: 50%;
+    min-height: 30vh;
 }
 
 .prebook-form label {
@@ -84,13 +95,36 @@ section.prebook {
     margin: 0 0.2em;
 }
 
+.react-time-picker__wrapper,
+.react-date-picker__wrapper
+ {
+    background: white;
+    height:2.5em;
+    min-width: 10vw;
+    border: 1px solid #2E266F;
+    border-radius: 0.2em;
+    margin-left: 0.2em;
+    outline: none;
+}
+
 .prebook-form input[type="text"],
 .prebook-form input[type="email"]{
-    height:2em;
+    height:2.5em;
     min-width: 10vw;
-    border: 1px solid #202020;
+    border: 1px solid #2E266F;
     border-radius: 0.2em;
+    margin-left: 0.2em;
 }
+
+.prebook-form input.input-number {
+    text-align: center;
+    height:2.5em;
+    min-width: 5vw;
+    border: 1px solid #2E266F;
+    border-radius: 0.2em;
+    margin-left: 0.2em;
+}
+
 .prebook-form input:focus {
     border: 1px solid #35CD8C;
     outline: none;
@@ -118,7 +152,7 @@ section.prebook {
 @media only screen and (max-width: 600px) {
     section.prebook {
         min-height: auto;
-        margin-top: -5em;
+        margin-top: -10vh;
     }
     .prebook img.lettuce-img {
        display: none;
@@ -131,12 +165,12 @@ section.prebook {
     }
 
     .prebook .dots-bg img.dots {
-        width: 15em;
+        width: 10em;
     }
 
     .prebook div.main-section {
         width: 90vw;
-        height: 80vh;
+        min-height: 80vh;
         margin: 0;
         align-self: center;
         z-index: 5;
@@ -150,33 +184,55 @@ section.prebook {
     .header .green-bar {
         height: 1em;
         width: 15em;
+        margin-bottom: 1em;
     }
 
     .header h2.heading {
         margin-top: 0.5em;
         font-size: 1.5em;
         line-height: 1em;
-
     }
 
     .main-section form.prebook-form {
-        flex-flow: column nowrap;
         justify-content: space-evenly;
-        height: 85%;
+        height: auto;
         width: 100%;
         margin-left: 0;
     }
 
-    .prebook-form .row {
+    .prebook-form .form-content {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 0;
     }
 
-    .prebook-form .row input[type="text"],
-    .prebook-form .row input[type="email"] {
-        margin: 1em 0;
+    .prebook-form .col {
+        justify-content: space-around;
+        align-items: flex-end;
+        margin: 0;
+        min-width: 100%;
+        min-height: 30vh;
     }
 
+    .prebook-form label {
+        margin: 0 0.4em;
+        align-self: center;
+    }
+
+    .prebook-form input.input-number {
+        text-align: initial;
+        min-width: 40vw;
+    }
+
+    .prebook-form input[type="text"],
+    .prebook-form input[type="email"] {
+        height: 2.5em;
+        min-width: 50vw;
+    }
+
+    .prebook-form button.booking-submit {
+        width: 50%;
+        margin-top: 2em;
+    }
 }

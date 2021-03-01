@@ -41,85 +41,81 @@ const PreBook = () => {
                 </div>
 
                 <form className="prebook-form" onSubmit={handleSubmit}>
-                    <div className="row">
-                        <label>
-                            Name:{" "}
-                            <input
-                                name="user"
-                                type="text"
-                                value={formFields.user}
-                                onChange={handleChange}
-                                placeholder="John Doe"
-                                required
-                            />
-                        </label>
-                        <label>
-                            Email:{" "}
-                            <input
-                                name="email"
-                                type="email"
-                                value={formFields.email}
-                                onChange={handleChange}
-                                placeholder="johndoe@gmail.com"
-                                required
-                            />
-                        </label>
-                    </div>
+                    <div className="form-content">
+                        <div className="col">
+                            <label>
+                                Name:{" "}
+                                <input
+                                    name="user"
+                                    type="text"
+                                    value={formFields.user}
+                                    onChange={handleChange}
+                                    placeholder="John Doe"
+                                    required
+                                />
+                            </label>
+                            <label>
+                                Email:{" "}
+                                <input
+                                    name="email"
+                                    type="email"
+                                    value={formFields.email}
+                                    onChange={handleChange}
+                                    placeholder="johndoe@gmail.com"
+                                    required
+                                />
+                            </label>
+                            <label>
+                                Phone:{" "}
+                                <input
+                                    name="phone"
+                                    type="text"
+                                    onChange={handleChange}
+                                    placeholder="+49 123456789"
+                                    value={formFields.phone}
+                                    required
+                                />
+                            </label>
+                        </div>
 
-                    <div className="row">
-                        <label>
-                            Phone Number:{" "}
-                            <input
-                                name="phone"
-                                type="text"
-                                onChange={handleChange}
-                                placeholder="+49 123456789"
-                                value={formFields.phone}
-                                required
-                            />
-                        </label>
-                        <label>
-                            Number of Guests:{" "}
-                            <input
-                                name="guests"
-                                value={formFields.guests}
-                                onChange={handleChange}
-                                type="number"
-                                min="1"
-                                max="20"
-                                required
-                                style={{
-                                    height: "2em",
-                                    border: " 1px solid #202020",
-                                    borderRadius: "0.2em",
-                                }}
-                            />
-                        </label>
-                    </div>
-                    <div className="row">
-                        <label>
-                            Date:{" "}
-                            <DatePicker
-                                onChange={(date) =>
-                                    setFormFields({ ...formFields, date })
-                                }
-                                value={formFields.date}
-                            />
-                        </label>
-                        {window.innerWidth <= 600 ? (
-                            <div style={{ margin: "0.8em 0" }}></div>
-                        ) : (
-                            ""
-                        )}
-                        <label>
-                            Time:{" "}
-                            <TimePicker
-                                onChange={(time) =>
-                                    setFormFields({ ...formFields, time })
-                                }
-                                value={formFields.time}
-                            />
-                        </label>
+                        <div className="col">
+                            <label>
+                                Guests:{" "}
+                                <input
+                                    name="guests"
+                                    value={formFields.guests}
+                                    onChange={handleChange}
+                                    type="number"
+                                    min="1"
+                                    max="20"
+                                    className="input-number"
+                                    required
+                                />
+                            </label>
+                            <label>
+                                Date:{" "}
+                                <DatePicker
+                                    onChange={(date) =>
+                                        setFormFields({ ...formFields, date })
+                                    }
+                                    value={formFields.date}
+                                />
+                            </label>
+                            {window.innerWidth <= 600 ? (
+                                <div style={{ margin: "0.8em 0" }}></div>
+                            ) : (
+                                ""
+                            )}
+                            <label>
+                                Time:{" "}
+                                <TimePicker
+                                    onChange={(time) =>
+                                        setFormFields({ ...formFields, time })
+                                    }
+                                    value={formFields.time}
+                                />
+                            </label>
+                        </div>
                     </div>
                     <button type="submit" className="booking-submit">
                         Submit
