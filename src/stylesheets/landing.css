@@ -179,6 +179,7 @@ main.landing {
 
     .left-section button.order-btn {
         width: 8em;
+        z-index: 5;
     }
 
     .background img.landing-food-img {
